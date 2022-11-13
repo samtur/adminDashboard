@@ -84,23 +84,99 @@ body {
 
 /* Header */
 .header {
+  color: #121629;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   background-color: #fffffe;
 }
 
 .searchbar {
+  font-size: 2em;
   grid-column: 1/3;
   display: flex;
+  gap: 1rem;
   align-items: center;
+  margin: 0rem 10rem 0rem 1rem;
+}
+
+.searchbar svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 #search {
-  border: 1px solid black;
+  font-size: 2rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  flex: 1;
+  border: 1px solid #121629;
+}
+
+#search:focus {
+  background-color: #e0e0e0;
+  border: 1px solid #121629;
 }
 
 .userbtns {
   grid-column: 2/4;
+}
+
+.useralert {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.useralert svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.profilepicture {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.profilepictureinfo {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.usertxt {
+  font-size: 1.5em;
+}
+
+.userbtns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.userbtns button {
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  background-color: #eebbc3;
+  color: #232946;
+  border-radius: 5px;
 }
 
 /* Content Container */
@@ -113,4 +189,27 @@ body {
 
 .projects {
   grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects,
+.annoucements,
+.trending {
+  margin: 1rem;
+}
+
+.contentheading {
+  font-size: 1.5rem;
+}
+
+.contentcard {
+  background-color: #fffffe;
+  height: 10rem;
+  width: 30rem;
+}
+
+/* 1200px Breakpoint */
+
+@media screen and (max-width: 1200px) {
 }
