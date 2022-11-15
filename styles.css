@@ -114,7 +114,7 @@ body {
 }
 
 #search:focus {
-  background-color: #e0e0e0;
+  background-color: #d6dee1;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -155,7 +155,7 @@ body {
 .userbtns button {
   font-size: 1.5rem;
   padding: 0.7rem;
-  background-color: #eebbc3;
+  background-color: #d6dee1;
   color: #232946;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -248,11 +248,44 @@ body {
   height: 2rem;
 }
 
+.annoucecard {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.annoucehead {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 0.5rem;
+}
+
+.annouce:nth-child(3),
+.annouce:nth-child(5) {
+  padding-bottom: 2rem;
+}
+
+.annouce:nth-child(2),
+.annouce:nth-child(4) {
+  border-bottom: 1px solid #121629;
+}
+
+.annouce {
+  font-size: 1.2rem;
+  align-self: center;
+  padding-bottom: 0.5rem;
+  overflow-y: scroll;
+}
+
 /* 1200px Breakpoint */
 
 @media screen and (max-width: 1600px) {
   .contentcard {
     grid-column: 1/3;
+  }
+
+  .annouce {
+    overflow-y: scroll;
   }
 }
 
@@ -264,4 +297,23 @@ body {
   .trending {
     display: none;
   }
+}
+
+.annouce::-webkit-scrollbar {
+  width: 20px;
+}
+
+.annouce::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.annouce::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
